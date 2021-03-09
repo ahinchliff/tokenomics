@@ -9,6 +9,6 @@
   "scripts": {
     "build": "tsc --build",
     "yarn-all": "yarn && cd api && yarn && cd ../core-backend && yarn && cd ../data-collectors && yarn && cd ../data && yarn && cd ../web && yarn && cd ..",
-    "heroku-postbuild": "yarn yarn-all && yarn build && cd web && cd .. && cp -R ./web/build ./api/build/static"
+    "heroku-postbuild": "yarn yarn-all && yarn build && cd web && yarn build-production && cd .. && cp -R ./web/build ./api/build/static"
   }
 }

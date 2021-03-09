@@ -136,7 +136,7 @@ function App() {
   return (
     <div className="h-screen overflow-y-scroll bg-gray-100  ">
       <div className="grid grid-cols-1 gap-2 p-2 md:gap-6 md:p-6 xl:grid-cols-3">
-        <div className="lg:col-span-2 grid grid-cols-2 lg:grid-cols-4 gap-6 p-4 bg-white border-2 border-gray-200 rounded">
+        {/* <div className="lg:col-span-2 grid grid-cols-2 lg:grid-cols-4 gap-6 p-4 bg-white border-2 border-gray-200 rounded">
           <div className="flex justify-center">
             <div>
               <span>Dai Price</span>
@@ -192,7 +192,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <Tile1 title="💸 Recent interest revenue 💸">
           <RecentInterestRevenue lastDrips={recentInterestRevenue} />
         </Tile1>
@@ -209,15 +209,11 @@ function App() {
             }
           />
         </Tile3>
-
         <Tile2 title="🙏 Top interest revenue claimers 🙏">
           <TopRevenueCollectors
             top20RevenueCollectors={interestRevenueStats.topRevenueCollectors}
           />
         </Tile2>
-        <Tile1 title="💸 Recent interest claims 💸">
-          <RecentInterestRevenue lastDrips={recentInterestRevenue} />
-        </Tile1>
         <Tile3 title="📈 Interest revenue by day 📈">
           <InterestRevenueByDay
             interestRevenueByDay={interestRevenueStats.interestRevenueByDay}

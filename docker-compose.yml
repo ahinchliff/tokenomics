@@ -1,0 +1,11 @@
+version: "2.2"
+services:
+  mysql:
+    image: mysql:5.7.21
+    environment:
+      MYSQL_ROOT_PASSWORD: r00t
+    volumes:
+      - ./data/seed/mysql:/docker-entrypoint-initdb.d
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    ports:
+      - "3306:3306"

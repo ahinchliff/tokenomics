@@ -1,0 +1,3 @@
+DROP USER 'application'@'%';
+CREATE USER 'application'@'%' IDENTIFIED BY '[[PASSWORD]]';
+GRANT SELECT, INSERT, DELETE ON `gotcha`.* TO application@'%';

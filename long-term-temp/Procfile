@@ -1,0 +1,1 @@
+data-collector: node ./data-collectors/build/previous.js

@@ -1,0 +1,131 @@
+INSERT INTO `mission` (
+  `mission_missionId`,
+  `mission_description`
+) VALUES (
+  1, 
+  'test-mission-1'
+), 
+(
+  2, 
+  'test-mission-2'
+), 
+(
+  3, 
+  'test-mission-3'
+), 
+(
+  4, 
+  'test-mission-4'
+), 
+(
+  5, 
+  'test-mission-5'
+), 
+(
+  6, 
+  'test-mission-6'
+), 
+(
+  7, 
+  'test-mission-7'
+), 
+(
+  8, 
+  'test-mission-8'
+), 
+(
+  9, 
+  'test-mission-9'
+), 
+(
+  10, 
+  'test-mission-10'
+), 
+(
+  11, 
+  'test-mission-11'
+), 
+(
+  12, 
+  'test-mission-12'
+), 
+(
+  13, 
+  'test-mission-13'
+), 
+(
+  14, 
+  'test-mission-14'
+), 
+(
+  15, 
+  'test-mission-15'
+), 
+(
+  16, 
+  'test-mission-16'
+), 
+(
+  17, 
+  'test-mission-17'
+), 
+(
+  18, 
+  'test-mission-18'
+), 
+(
+  19, 
+  'test-mission-19'
+), 
+(
+  20, 
+  'test-mission-20'
+);
+
+INSERT INTO `user` (
+  `user_userId`, 
+  `user_username`, 
+  `user_password`, 
+  `user_displayName`
+) VALUES (
+  1, 
+  '2e3da33aca26830df6538cf5785af4aec88c40cb7dc34f34544a46809cb946791b7149d6dd5d334a76e3f830b5cf925b4070e7ef4de53e0d0d498cf982bdf377',
+  '$2b$10$yIzZqJ4aSdca1ebD1aZcZOJaXO1daTATKECAzfN4qH7oDH4B0aJtq', 
+  'test-user-1'
+), (
+  2, 
+  '86b5431cf3dd051a6ee3a73ba431b0072f16fc5df711917f34f9b770f9bfbe60230fd1fd8b7b8ee4abbc4fb4d61fa80f6a51e80337a5f549d123633c1f91f23c',
+  '$2b$10$yIzZqJ4aSdca1ebD1aZcZOJaXO1daTATKECAzfN4qH7oDH4B0aJtq', 
+  'test-user-2'
+), (
+  3, 
+  'c73fefd63140da551fbfee84291fe3b85b4238a00204d0831bbb53c96655de84eca27f0922b33d928df8bf13a2c8bab2b436a829ec3075ef072d3fb0a4e6a513',
+  '$2b$10$yIzZqJ4aSdca1ebD1aZcZOJaXO1daTATKECAzfN4qH7oDH4B0aJtq', 
+  'test-user-3'
+);
+
+INSERT INTO `game` (
+  `game_gameId`,
+  `game_title`,
+  `game_ownerId`,
+  `game_joinCode`
+) VALUES (
+  1, 
+  'test-game-1', 
+  1, 
+  'four blue cows'
+);
+
+INSERT INTO `player` (
+  `player_gameId`,
+  `player_userId`
+) VALUES (
+  1, 
+  1
+), (
+  1, 
+  2
+), (
+  1,
+  3
+);

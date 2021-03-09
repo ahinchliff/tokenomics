@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "rootDir": ".",
+    "outDir": "./build",
+    "strictNullChecks": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "lib": ["es2017", "dom"],
+    "composite": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": "."
+  },
+  "references": [
+    {
+      "path": "./data-collectors"
+    },
+    {
+      "path": "./core-backend"
+    },
+    {
+      "path": "./data"
+    },
+    {
+      "path": "./api"
+    },
+    {
+      "path": "./api-interfaces"
+    }
+  ],
+  "include": [
+    "./data-collectors/src/**/*.d.ts",
+    "./data/src/**/*.d.ts",
+    "./core-backend/src/**/*.d.ts",
+    "./api/src/**/*.d.ts",
+    "./api-interfaces/src/**/*.d.ts",
+    "./web/src/**/*.d.ts"
+  ]
+}

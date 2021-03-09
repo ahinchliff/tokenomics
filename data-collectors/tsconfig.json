@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "composite": true,
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build"
+  },
+  "include": [
+    "../data/src/**/*.d.ts",
+    "../core-backend/src/**/*.d.ts",
+    "./src"
+  ],
+  "references": [{ "path": "../data" }, { "path": "../core-backend" }]
+}
